@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="main.css" rel="stylesheet">
+  
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- Popper JS -->
@@ -13,75 +13,106 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link href="main.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
 
 </head>
 
 <body data-spy="scroll" data-target="#navbar">
-  <div id="nav">
-    <nav id="navbar" class="navbar navbar-dark bg-dark fixed-top">
-      <a href="#" class="navbar-brand">
-        <div class="spinner-grow text-info" role="status">
-          <span class="sr-only">Loading...</span>
-        </div> Yorguin Murillo's Portfolio
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top justify-content-between">
+      <a class="navbar-brand" href="#">
+        Yorguin Murillo's Portfolio
       </a>
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="#About">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#Contact">Contact</a>
-        </li>
-      </ul>
-      <form class="form-inline">
-        <a target="_blank" href="src/resume2019.pdf" class="btn btn-info"><i
-            class="material-icons md-18">cloud_download</i>
-          Resume</a>
-      </form>
-    </nav>
-  </div>
-  <div class="container bg-light shadow pb-5 mb-5 rounded">
-    <div data-spy="scroll" data-target="#navbar" data-offset="0">
-      <img id="About" src="./img/banner.jpeg" class="img-fluid" alt="Responsive image">
-      <h1 class="text-center text-info mt-3 display-3"> About me</h1>
-
-      <h3 class="m-4">Yorguin Murillo <span class="text-muted"> - Full Stack Programmer</span></h3>
-      <div class="row">
-
-        <div class="card shadow rounded">
-          <div class="card-body">
-            <h5 class=" text-info text-center">Mission Statement
-            </h5>
-            <p class="card-text lead">Ideas are a spontaneous spark in our brain that could worth much more than we
-              could
-              possibly imagine. Everything that we have now was once an idea. As a Developer, I am able to help those
-              ideas become true, that is what motivates me every time start to code. “This will be great”.</p>
-            <h5 class="text-info text-center">Bio</h5>
-            <p class="card-text">I am a Computer programmer analyst who has graduated from Niagara College in their
-              Computer Programmer Analyst (Co-Op) program. Trough the program I was able to develop various projects
-              in a team and by myself.
-
-              I have a strong knowledge in different languages such as <strong>C#, Python, JavaScript, Java,
-                PHP</strong>. I have
-              utilized <strong>Relational Databases</strong> s with SQL server, MySQL, and
-              <strong>Non-relational</strong> databases with NoSQL. I have
-              developed a project for clients with the community sponsored project with my team. During the Co-Op I
-              developed a Web-Application from scratch by myself. I also have a lot of customer service experience
-              since I’ve worked as a server for more than 5 years.
-
-              During my spare time, I enjoy playing sports and spend time with my family.</p>
-
-
-
-          </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#About">About <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#Projects">Projects</a>
+          <a class="nav-item nav-link" href="#Contact">Contact</a>
+          <form class="form-inline">
+            <a target="_blank" href="src/resume2019.pdf" class="btn btn-outline-info">
+              Resume</a>
+          </form>
         </div>
+      </div>
+    </nav>
+  
+    <div data-spy="scroll" data-target="#navbar" data-offset="0">
+      
+      <div class="header" id="About">
+        <div class="container">
+          <h1 class="text-center text-light mt-3 display-1 ">Yorguin Murillo</h1>
+        <h3 class="m-4 text-light">Full Stack Developer</h3>
+        <div class="row">
+          <p class="text-white lead">"Ideas are a spontaneous spark in our brain that could worth much more than we
+            could
+            possibly imagine. Everything that we have now was once an idea. As a Developer, I am able to help those
+            ideas become true, that is what motivates me every time start to code."</p>
+            
+            
 
+          <!-- <div class="card">
+            <div class="card-body">
+              <h5 class="text-info text-center">Bio</h5>
+              <p class="card-text">I am a Computer programmer analyst who has graduated from Niagara College in their
+                Computer Programmer Analyst (Co-Op) program. Trough the program I was able to develop various projects
+                in a team and by myself.
 
+                I have a strong knowledge in different languages such as <strong>C#, Python, JavaScript, Java,
+                  PHP</strong>. I have
+                utilized <strong>Relational Databases</strong> s with SQL server, MySQL, and
+                <strong>Non-relational</strong> databases with NoSQL. I have
+                developed a project for clients with the community sponsored project with my team. During the Co-Op I
+                developed a Web-Application from scratch by myself. I also have a lot of customer service experience
+                since I’ve worked as a server for more than 5 years.
+
+                During my spare time, I enjoy playing sports and spend time with my family.</p>
+            </div>
+          </div> -->
+        </div>
+        
+        </div>
+        
       </div>
       <!--End of first page-->
+
+      <div class="container">
+        <h1 class="text-center text-info mt-5 mb-4 display-3">Bio</h1>
+        <p class="lead">I am a Computer programmer Analyst who has graduated from Niagara College in their
+          Computer Programmer Analyst (Co-Op) program. Trough the program, I was able to develop various projects
+          in a team and by myself.
+
+          I have a strong knowledge in different languages such as <strong>C#, Python, JavaScript,
+            PHP</strong>. I have
+          utilized <strong>Relational Databases</strong> with SQL server, MySQL, and
+          <strong>Non-relational</strong> databases with NoSQL. I have
+          developed a project for a client with the community sponsored project with my team. <br> During the Co-Op I
+          have developed a Web-Application from scratch by myself. I also have a lot of customer service experience
+          since I’ve worked as a server for more than 5 years.
+          <br>
+          During my spare time, I enjoy learning about new tecnhologies and doing Exercise.</p>
+          <h1 class="display-3">
+            <i class="devicon-csharp-plain colored"></i>
+            <i class="devicon-dot-net-plain-wordmark colored"></i>
+            <i class="devicon-bootstrap-plain colored"></i>
+
+            <i class="devicon-mongodb-plain-wordmark colored"></i>
+            <i class="devicon-express-original colored"></i>
+            <i class="devicon-react-original colored"></i>
+            <i class="devicon-nodejs-plain colored"></i>
+            
+            <i class="devicon-php-plain colored"></i>
+            <i class="devicon-python-plain colored"></i>
+            
+            <i class="devicon-laravel-plain-wordmark colored"></i>
+            <i class="devicon-mysql-plain colored"></i>
+            <i class="devicon-git-plain colored"></i>
+            
+          </h1>
       <hr class="mb-2" id="Projects">
       <div>
         <h1 class="text-center text-info mt-5 mb-4 display-3 bg-transparent">Projects</h1>
@@ -171,6 +202,7 @@
 
           </div>
         </div>
+
         <div class="card shadow-sm rounded">
           <div class="card-body">
             <div class="row">
@@ -289,13 +321,13 @@
     <div class="row bg-dark mh-50">
       <h1 class="text-center text-light display-3 m-5">Contact</h1>
     </div>
-    <div class="container mt-5">
+    <!-- <div class="container mt-5">
       <h1 class="m-4 display-3 text-dark">Email <span class="text-info">:</span> ymurillov@gmail.com <a
           class="btn btn-lg btn-outline-info" href="mailto:ymurillov@gmail.com?Subject=Hello%20there">Send</a></h1>
       <h1 class="m-4 display-3 text-dark">Telephone<span class="text-info">:</span> 905<span
           class="text-info">-</span>984<span class="text-info">-</span>1012 <a class="btn btn-outline-success btn-lg"
           href="tel:905-984-1012">Call</a></h1>
-    </div>
+    </div> -->
   </div>
 
 </body>

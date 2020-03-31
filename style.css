@@ -1,8 +1,12 @@
-.nav-pills .pill-1 .nav-link:not(.active) {
-    background-color: rgba(255, 0, 0, 0.5);
-}
 
-.nav-pills .pill-1 .nav-link {
-    background-color: rgba(255, 0, 0, 0.2);
-    color: white;
-}
+   .header {
+    height: 100vh;
+    background-image: url("../img/banner.jpeg");
+    /* Flexbox */
+    display: flex;
+    align-items: center;
+   }
+
+
+
+
